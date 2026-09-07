@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "code": "101",
+      "name": "Heineken Long Neck",
+      "price": 12.0,
+      "cost": 6.5,
+      "subgroupId": 1,
+      "printerId": 1,
+      "icon": "beer",
+      "order": 1,
+      "stock": 100,
+      "useNameOnPrint": true
+    },
+    {
+      "id": 102,
+      "code": "102",
+      "name": "Coca-Cola 350ml",
+      "price": 6.0,
+      "cost": 2.8,
+      "subgroupId": 1,
+      "printerId": 1,
+      "icon": "droplet",
+      "order": 2,
+      "stock": 200,
+      "useNameOnPrint": true
+    },
+    {
+      "id": 201,
+      "code": "201",
+      "name": "X-Burguer Artesanal",
+      "price": 28.0,
+      "cost": 12.0,
+      "subgroupId": 2,
+      "printerId": 2,
+      "icon": "sandwich",
+      "order": 1,
+      "stock": 50,
+      "useNameOnPrint": true
+    },
+    {
+      "id": 202,
+      "code": "202",
+      "name": "Batata Frita G",
+      "price": 18.0,
+      "cost": 5.0,
+      "subgroupId": 2,
+      "printerId": 2,
+      "icon": "utensils",
+      "order": 2,
+      "stock": null,
+      "useNameOnPrint": true
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "BEBIDAS",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "COMIDA",
+      "order": 2
+    }
+  ],
+  "subgroups": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "name": "Cervejas e Refris",
+      "buttonColor": "#3b82f6",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 2,
+      "groupId": 2,
+      "name": "Lanches e Porções",
+      "buttonColor": "#f97316",
+      "textColor": "#ffffff"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": 1,
+      "code": "1",
+      "order": 1,
+      "name": "DINHEIRO",
+      "buttonColor": "#22c55e",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 2,
+      "code": "2",
+      "order": 2,
+      "name": "CARTÃO CRÉDITO",
+      "buttonColor": "#3b82f6",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 3,
+      "code": "3",
+      "order": 3,
+      "name": "CARTÃO DÉBITO",
+      "buttonColor": "#6366f1",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 4,
+      "code": "4",
+      "order": 4,
+      "name": "PIX",
+      "buttonColor": "#000000",
+      "textColor": "#ffffff"
+    }
+  ],
+  "printers": [
+    {
+      "id": 1,
+      "name": "IMPRESSORA BAR",
+      "model": "Genérico ESC/POS 80mm",
+      "ip": "192.168.1.200",
+      "port": 9100,
+      "activeCut": true,
+      "useWindowsPrinter": false
+    },
+    {
+      "id": 2,
+      "name": "IMPRESSORA COZINHA",
+      "model": "Genérico ESC/POS 80mm",
+      "ip": "192.168.1.201",
+      "port": 9100,
+      "activeCut": true,
+      "useWindowsPrinter": false
+    }
+  ],
+  "terminals": [
+    {
+      "id": "CX1",
+      "cashNumber": 1,
+      "name": "cx - 01",
+      "layout": "vertical",
+      "font": "Outfit",
+      "fontSize": "medium",
+      "printerId": null,
+      "active": true
+    }
+  ],
+  "sales": [],
+  "cash": {
+    "isOpen": false,
+    "sales": []
+  },
+  "versions": [
+    {
+      "id": 1,
+      "version": "1.0.0",
+      "date": "2026-05-23T10:00:00.000Z",
+      "description": "Versão inicial de lançamento do sistema VELO com controle de vendas e impressão de cupom."
+    }
+  ],
+  "currentVersion": "1.0.0"
+}

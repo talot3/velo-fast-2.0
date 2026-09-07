@@ -1,0 +1,43 @@
+=====================================================================
+                    TICKET PRO - BANCO DE DADOS ZERADO
+=====================================================================
+
+Esta pasta contém uma cópia limpa ("zerada") do banco de dados do sistema, 
+ideal para iniciar um novo evento do absoluto zero, sem nenhuma venda 
+registrada e com o caixa fechado.
+
+Arquivos nesta pasta:
+- db.json : Banco de dados formato JSON (usado pelo roteador PHP).
+- ticketpro.db : Banco de dados relacional SQLite (usado pelo servidor Node.js).
+
+---------------------------------------------------------------------
+COMO ANEXAR / USAR O BANCO ZERADO NO SISTEMA:
+---------------------------------------------------------------------
+
+Se você for começar um novo evento e quiser zerar todos os históricos:
+
+1. Pare o servidor do sistema (feche o console/prompt do PHP ou Node.js).
+2. Navegue até a pasta "date" no diretório principal do projeto:
+   Caminho: \Ticket 1 a 1 (PDV)\Ticket 1 a 1 (PDV)\date\
+3. (Recomendado) Faça um backup dos seus arquivos atuais renomeando os 
+   arquivos existentes na pasta "date" (ex: mude "db.json" para 
+   "db_evento_anterior.json" e "ticketpro.db" para "ticketpro_evento_anterior.db").
+4. Copie os arquivos "db.json" e "ticketpro.db" que estão AQUI nesta pasta 
+   "BANCO_ZERADO".
+5. Cole-os dentro da pasta "date", substituindo os arquivos ativos.
+6. Inicie o seu servidor novamente (executando o PHP ou Node.js).
+
+Pronto! O sistema abrirá com os produtos iniciais padrão, com 0 vendas 
+registradas e o caixa fechado pronto para iniciar a nova jornada.
+
+=====================================================================
+🗑️ DICA EXTRA: ZERAR APENAS AS VENDAS (MANTER SEUS PRODUTOS CADASTRADOS)
+=====================================================================
+Se você cadastrou muitos produtos personalizados e quer apenas limpar as 
+vendas mantendo o cardápio que você montou:
+1. Abra o painel administrativo/portal de gestão no seu navegador.
+2. Vá em Configurações ou Exportação e você poderá limpar o histórico 
+   ou gerenciar os cadastros.
+3. Se precisar de uma limpeza cirúrgica de vendas mantendo produtos,
+   basta solicitar ao seu assistente de IA!
+=====================================================================
