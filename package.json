@@ -1,0 +1,14 @@
+{
+  "name": "velo-fast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VELO PDV - operação online com Vercel, Supabase e agente de impressão",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "vercel-build": "echo Vercel build ready",
+    "check": "node --check server.js && node --check api/index.js && node --check api/supabase-store.js && node --check scripts/print-agent.js && node --check scripts/migrate-json-to-supabase.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "@supabase/supabase-js": "^2.57.0" }
+}
